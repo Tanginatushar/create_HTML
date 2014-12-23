@@ -17,7 +17,7 @@ $query = "INSERT INTO `info_students`.`users` (
 `PhoneNumber`
 )
 VALUES (
-    '$ID','$firstName', '$lastName','$PhoneNumber'
+    '$ID','$firstName', '$lastName', '$PhoneNumber'
 )";
 
 mysqli_query($link, $query);

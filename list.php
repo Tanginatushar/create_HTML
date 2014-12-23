@@ -21,6 +21,7 @@ print_r($row);
         <td>LastName</td>
         <td>PhoneNumber</td>
         <td>Action</td>
+        <td>Action</td>
     </tr>
     <?php
     foreach($result as $row){
@@ -31,7 +32,8 @@ print_r($row);
             <td><?php echo $row['FirstName']?></td>
             <td><?php echo $row['LastName']?></td>
             <td><?php echo $row['PhoneNumber']?></td>
-            <td> <a href="#">Edit</a> | <a href="delete.php?ID=<?php echo $row['ID']?>">Delete</a> </td>
+            <td> <a href="editDb.php?ID=<?php echo $row['ID']?>">Edit</a> | <a href="delete.php?ID=<?php echo $row['ID']?>">Delete</a> </td>
+            <td><a href="view.php?ID=<?php echo $row['ID']?>">view</a> </td>
         </tr>
 
     <?php
