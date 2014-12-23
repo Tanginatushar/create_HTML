@@ -3,7 +3,7 @@ print_r($_REQUEST);
 $ID=$_POST['ID'];
 $firstName = $_POST['FirstName'];
 $lastName  = $_POST['LastName'];
-$Phone_number=$_POST['PhoneNumber'];
+$PhoneNumber=$_POST['PhoneNumber'];
 
 $link = mysqli_connect("localhost",
     "root",
@@ -17,7 +17,7 @@ $query = "INSERT INTO `info_students`.`users` (
 `PhoneNumber`
 )
 VALUES (
-    '$ID',''$firstName', '$lastName','$Phone_number'
+    '$ID','$firstName', '$lastName','$PhoneNumber'
 )";
 
 mysqli_query($link, $query);
