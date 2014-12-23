@@ -6,9 +6,10 @@ $link = mysqli_connect("localhost",
     "rts",
     "info_students");
 
-$query = "UPDATE `info_students` SET LastName='Shultana'  WHERE `ID` =3";
+$query = "UPDATE `info_students`.`users` SET LastName='Shultana'  WHERE `ID` =$ID";
 
-mysqli_query($link, $query);
+$result=mysqli_query($link, $query);
+
 
 header('location:list.php');
 ?>
