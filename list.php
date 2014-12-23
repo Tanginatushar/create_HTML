@@ -1,5 +1,5 @@
 <?php
-
+$ID = $_GET['ID'];
 $link = mysqli_connect("localhost",
     "root",
     "rts",
@@ -31,7 +31,7 @@ print_r($row);
             <td><?php echo $row['FirstName']?></td>
             <td><?php echo $row['LastName']?></td>
             <td><?php echo $row['PhoneNumber']?></td>
-            <td> <a href="#">Edit</a> | <a href="delete.php">Delete</a> </td>
+            <td> <a href="#">Edit</a> | <a href="delete.php?ID=<?php echo $row['ID']?>">Delete</a> </td>
         </tr>
 
     <?php
